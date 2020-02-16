@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+// Davin Jimeno
+// 2/15/2020
 
 public class SegmentIK : MonoBehaviour
 {
