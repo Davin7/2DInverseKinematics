@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+// Davin Jimeno
+// 2020
 
 //defines the base location for the child SegmentIKs
 // segmentIK connect base point root to outer point branch
