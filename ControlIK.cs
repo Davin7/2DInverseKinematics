@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 // Davin Jimeno
-// 2020
+// 2/15/2020
 public class ControlIK : MonoBehaviour
 {
     private int speed = 7;
