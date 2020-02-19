@@ -25,9 +25,9 @@ In the Unity Editor, each script will have the following public parameters to se
 RootIK:
 * seg: the top segment of the armature heirarchy, in the above example, Segment0
 * control: the control object the inverse kinematics armature will follow, in the above example, Control
-* numSegments: the number of segment gameobjects the RootIK script will "dig" into and add to the Root's List<Segment> armature
+* numSegments: the number of segment gameobjects the RootIK script will "dig" through and add to the Root's List<Segment> armature
     
 SegmentIK:
-    
+* The public variables in SegmentIK are not meant to be edited in the Unity Editor
     
 
