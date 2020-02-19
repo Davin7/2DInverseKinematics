@@ -1,6 +1,8 @@
 # 2DInverseKinematics
 2D Inverse Kinematics system supporting polarization without raycasting
 
+![Alt_Text](https://media.giphy.com/media/QvT8vgEmtPzql2qf5n/source.gif)
+
 This Unity 2D inverse kinematics system uses the following prefab heirarchy. Each [item] represents a Unity gameobject with
 indented gameobjects as transform.children of predecessor gameobjects.
 
@@ -37,5 +39,5 @@ SegmentIK:
 * The public variables in SegmentIK do not need to be edited in the Unity Editor
 
 ControlIK:
-* This script has no public variables and is used to identify 
+* This script has no public variables
 
