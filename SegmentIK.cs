@@ -104,12 +104,12 @@ public class SegmentIK : MonoBehaviour
             // mirror parent's root along IK axis 
        // Debug.Log(name + "  applyVerticalPole  ");
         Vector2 dir = branch - root;
-        Debug.Log(name + "  dir: " + dir);
+        //Debug.Log(name + "  dir: " + dir);
         float angle = Vector2.SignedAngle(axisIK, dir);
         float dy = myLength * Mathf.Sin(Mathf.Deg2Rad * angle);
         //Debug.Log(name + "  dy: " + dy);
         Vector2 dirNormal = Vector2.Perpendicular(axisIK).normalized * 2 * dy;
-        Debug.Log(name + "  dir normal: " + dirNormal);
+        //Debug.Log(name + "  dir normal: " + dirNormal);
         root = dirNormal * root;
     }
 }
