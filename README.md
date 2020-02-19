@@ -3,7 +3,7 @@
 
 ![Alt_Text](https://media.giphy.com/media/QvT8vgEmtPzql2qf5n/source.gif)
 
-This Unity 2D inverse kinematics system uses the following prefab heirarchy. Each [item] represents a Unity gameobject with
+This Unity 2D inverse kinematics system uses the following heirarchy. Each [item] represents a Unity gameobject with
 indented gameobjects as transform.children of predecessor gameobjects.
 
 [Armature]
