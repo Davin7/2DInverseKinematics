@@ -34,6 +34,8 @@ RootIK:
 * seg: the top segment of the armature heirarchy, in the above example, [Segment0]
 * control: the control object the inverse kinematics armature will follow, in the above example, [Control]
 * numSegments: the number of segment gameobjects the RootIK script will "dig" through and add to the Root's List<Segment> armature, to reach SegmentN in the above example, this value would be set to N + 1
+* numPasses: defines the number of times the inverse kinematics are applied to the armature per frame. Higher values correspond to smoother motion at the expense of memory usage.
+* rootLocation: x, y location to place the fixed part of the armature.
     
 SegmentIK:
 * The public variables in SegmentIK do not need to be edited in the Unity Editor
