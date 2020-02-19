@@ -12,7 +12,7 @@ indented gameobjects as transform.children of predecessor gameobjects.
 
 ---------------[Segment1]
 
---------------------   ...
+--------------------[...]
 
 -------------------------[SegmentN]
 
