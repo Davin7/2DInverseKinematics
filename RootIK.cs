@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 // Davin Jimeno
@@ -20,12 +20,12 @@ public class RootIK : MonoBehaviour
     public int numPasses;
     
     public Vector2 rootLocation;
-
     
     // fixed location of armature
     private Vector2 armatureRoot;
 
     private SegmentIK[] armature;
+
 
     void Start()
     {
@@ -37,19 +37,10 @@ public class RootIK : MonoBehaviour
         armatureRoot = rootLocation;
     }
 
+
     // Runs every frame
     void Update()
     {
-
-        // get branch location on target plus segment half width offset
-       // calculateBranch();
-       // calculateRoot();
-
-       // Debug.Log(name + "  branch :" + branch);
-        //Debug.Log(name + "  root :" + root);
-        // place segment between root and branch
-        // followTarget(seg, branch, root);
-        // pointSegment(seg, branch, root);
 
         // Loop for number of passes required by prefab
         for (int p = 1; p <= numPasses; p++)
@@ -83,40 +74,9 @@ public class RootIK : MonoBehaviour
             {
                 armature[f].fixedKinematicStep(armature[f + 1].branch);
             }
-
         }
- 
     }
-    /*
-    private void calculateRoot()
-    {
-        Vector2 dir = branch - root;
-        dir.Normalize();
-        dir = dir * segLen;
-        dir = dir * -1;
-
-        root = dir + branch;
-    }*/
-    /*
-    private void followTarget(SegmentIK seg, Vector2 branch, Vector2 root)
-    {
-        Vector2 loc = (branch + root) / 2;
-        seg.transform.position = loc;
-    }
-    private void pointSegment(SegmentIK seg, Vector2 branch, Vector2 root)
-    {
-        Debug.Log(name + "  root location : " + root);
-        Debug.Log(name + "  control : " + branch);
-        Vector2 dir = branch - root;
-        seg.gameObject.transform.rotation = Quaternion.FromToRotation(Vector2.right, dir);
-
-    }*/
-    /*
-    private void calculateBranch()
-    {
-        branch.Set(control.transform.position.x, control.transform.position.y);
-    }*/
-
+    
     // loop through children segments of armature and build armature segment array
     private void buildArmature(SegmentIK topSeg)
     {
