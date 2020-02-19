@@ -20,7 +20,7 @@ indented gameobjects as transform.children of predecessor gameobjects.
 
 -----[Control]
     
-The Armature is an empty gameobject that acts as a "folder" for its children, Root and Control. 
+The [Armature] is an empty gameobject that acts as a "folder" for its children, Root and Control. Establishing the [Armature] as a prefab will make this system portable within Unity3D projects. 
 
 The scripts are attached to the gameobjects as follows:
 
