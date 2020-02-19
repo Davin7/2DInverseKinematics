@@ -4,13 +4,13 @@
 This Unity 2D inverse kinematics system uses the following prefab heirarchy. Each [item] represents a Unity gameobject with
 indented gameobjects as transform.children of predecessor gameobjects.
 
-[Armature]
-    [Root]
-        [Segment0]
-            [Segment1]
-                ...
-                    [SegmentN]
-    [Control]
+* [Armature]
+..* [Root]
+....* [Segment0]
+......* [Segment1]
+........* ...
+..........* [SegmentN]
+..* [Control]
     
 The Armature is an empty gameobject that acts as a "folder" for its children, Root and Control. 
 
@@ -28,6 +28,8 @@ RootIK:
 * numSegments: the number of segment gameobjects the RootIK script will "dig" through and add to the Root's List<Segment> armature
     
 SegmentIK:
-* The public variables in SegmentIK are not meant to be edited in the Unity Editor
-    
+* The public variables in SegmentIK do not need to be edited in the Unity Editor
+
+ControlIK:
+* This script has no public variables and is used to identify 
 
