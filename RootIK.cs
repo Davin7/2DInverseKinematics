@@ -70,7 +70,7 @@ public class RootIK : MonoBehaviour
                 if ((control.transform.position.x > 0 && ang < -0.1) || (control.transform.position.x < 0 && ang > 0.1))
                 {
                     Vector2 axisIK = armature[s].branch - armature[s + 1].root;
-                    Debug.Log(armature[s].name + "  axisIK: " + axisIK);
+                    //Debug.Log(armature[s].name + "  axisIK: " + axisIK);
                     armature[s].applyVerticalPole(axisIK);
                     armature[s + 1].inverseKinematicMovement(armature[s].branch);
                 }
