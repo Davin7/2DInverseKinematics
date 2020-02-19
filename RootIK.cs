@@ -12,19 +12,20 @@ public class RootIK : MonoBehaviour
     // Top segment of armature heirarchy
     public SegmentIK seg;
 
-    // game object for armature to follow
+    // game object to point armature
     public GameObject control;
 
-    // number of segments in the armature
     public int numSegments;
 
+    public int numPasses;
+    
+    public Vector2 rootLocation;
+
+    
     // fixed location of armature
     private Vector2 armatureRoot;
 
     private SegmentIK[] armature;
-
-    // Specify number of passes of Inversekinematics on the armature
-    private const int NumPasses = 20;
 
     void Start()
     {
@@ -33,7 +34,7 @@ public class RootIK : MonoBehaviour
         //calculateBranch();
         //calculateRoot();
         buildArmature(seg);
-        armatureRoot = Vector2.zero;
+        armatureRoot = rootLocation;
     }
 
     // Runs every frame
@@ -51,7 +52,7 @@ public class RootIK : MonoBehaviour
         // pointSegment(seg, branch, root);
 
         // Loop for number of passes required by prefab
-        for (int p = 1; p <= NumPasses; p++)
+        for (int p = 1; p <= numPasses; p++)
         {
             // Rotate segments following controlIK point
             armature[0].inverseKinematicMovement(control.transform.position);
