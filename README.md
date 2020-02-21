@@ -38,7 +38,7 @@ RootIK:
 * rootLocation: x, y location to place the fixed part of the armature.
     
 SegmentIK:
-* The public variables in SegmentIK do not need to be given values in the Unity Editor
+* The public variables in SegmentIK are used by the RootIK script
 
 ControlIK:
 * This script has no public variables
